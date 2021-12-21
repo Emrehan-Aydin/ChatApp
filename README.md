@@ -1,3 +1,4 @@
+
 ## Projenin Amacı
 - İki bilgisayar arasında server-client yapısı kurularak soketler aracılığı ile birbirlerine bağlanabilmeleri 
 - SHA-256 ve SPN-16 Şifreleme Algoritmaları Kullanılarak  şifreli olarak mesaj gönderebilmeleri ve geri şifreleri çözerek mesaj içeriğine erişebilmeleri.
@@ -27,6 +28,7 @@ Projede 4 adet katman vardır.
 - Programımızın arayüzünün tasarlandığımız ve çağırıları  gerçekleştirdiğimiz form sınıfımız.  CxFlatUI ve Magic.ModernUI gibi farklı arayüz componentlerini  içeren farklı kütüphanelerden yararlanıldı.
 #### Örnek Arayüz görüntüsü
 
+![Untitled](https://user-images.githubusercontent.com/78824631/146924199-15d66201-f54f-4495-ab41-97a0cada1276.png)
 
 ### ChatApp.UnitTest Katmanı 
 - **SPNDecodeTest** : SPN algoritmamız gelen veriyi çözmesini sağlayan SPN.Decode sınıfımızın birim testi.
@@ -35,4 +37,9 @@ Projede 4 adet katman vardır.
 - **ConvertCharacterTest** : Girilen Türkçe karakterlerin ascii karakterlere dönüştürülmesi, Metoda giren verilerin Türkçe karakter kontrol testli
 - **Ipv4ValidatorTest** : Girilen IP değerleri doğru formatta girilip girilmediğini, doğru formatta girilmediği taktirde ilgili Exceptionları fırlatması gerektiği test
 
-### Source Monitör Analiz Sonuçları
+- **Testlerin Konsol Çıktısı**
+![image](https://user-images.githubusercontent.com/78824631/146924409-ce67d1ab-29fb-474d-bb4e-48e41751ed65.png)
+
+### Kaynak kod Grafiksel Analizi
+
+![image](https://user-images.githubusercontent.com/78824631/146924344-3e518784-f3e3-4180-8d1a-93e3b15f1ef9.png)
