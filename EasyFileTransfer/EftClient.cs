@@ -121,7 +121,6 @@ namespace EasyFileTransfer
             ms.Write(dataLength, 0, dataLength.Length);
             ms.Write(separator, 0, separator.Length);
             ms.Write(data, 0, data.Length);
-
             return ms.ToArray();
         }
     }
