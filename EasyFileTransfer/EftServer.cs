@@ -12,7 +12,7 @@ namespace EasyFileTransfer
     public class EftServer
     {
         public string SaveTo;
-        public int Port;
+        public int Port;  
         TcpListener obj_server;
         public EftServer(string SaveTo, int Port)
         {

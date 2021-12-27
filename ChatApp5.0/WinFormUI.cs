@@ -24,7 +24,7 @@ namespace ChatApp5._0
         private byte[] buffer; // gelen Veri için buffer dizimiz.
         private string senderPassword; // gönderdiğimiz şifre
         private string message; // gönderilmek istenen mesaj hafızamız
-        private string algorithm; // program içerisindeki şifreleme algoritması
+        private string algorithm; // program içerisindeki şifreleme algoritması  
         private void Form1_Load(object sender, EventArgs e)
         {
             // soket ataması

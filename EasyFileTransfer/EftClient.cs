@@ -14,7 +14,7 @@ namespace EasyFileTransfer
         /// <summary>
         /// Percentage of file send progress
         /// </summary>
-        public static int ProgressValue;
+        public static int ProgressValue;  
 
         /// <summary>
         /// send file
