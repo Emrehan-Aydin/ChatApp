@@ -7,25 +7,25 @@ namespace ChatApp.UnitTests.Ipv4ValidatorTest
 {
     public class Ipv4ValidatorTest
     {
-        // Test Edilen deðerler
+        // Test Edilen deï¿½erler
         [Theory]
         [InlineData("192.168.1.1")]
         [InlineData("0.0.0.0")]
         [InlineData("255.255.255.255")]
-        // Geçerli IP adresi girildiðinde hata geri dönmemeli
+        // Geï¿½erli IP adresi girildiï¿½inde hata geri dï¿½nmemeli
         public void WhenGivenValidIp_IpValidator_ReturnNotBeShouldThrow(string _Ipv4)
         {
             Ipv4Validator validator = new Ipv4Validator();
             FluentActions.Invoking(()=>validator.ValidateIPv4(_Ipv4))
             .Should().NotThrow();
         }
-        // Test Edilen deðerler
+        // Test Edilen deï¿½erler
         [Theory]
         [InlineData("192.168.1.256")]
         [InlineData(" ")]
         [InlineData("-1.0.0.0")]
         [InlineData("192.168.1")]
-        // Geçersiz Ip adrsi girildiðinde InvalidOperationException tipinde hata geri fýrlatmasý gerekir.
+        // Geï¿½ersiz Ip adrsi girildiï¿½inde InvalidOperationException tipinde hata geri fï¿½rlatmasï¿½ gerekir.
         public void WhenGivenInvalidIp_IpValidator_ReturnNotBeShouldThrow(string _Ipv4)
         {
             Ipv4Validator validator = new Ipv4Validator();

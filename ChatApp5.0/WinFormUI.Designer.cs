@@ -356,3 +356,4 @@
         private MagicUI.MagicControl.MagicProgressBar worker;
     }
 }
+

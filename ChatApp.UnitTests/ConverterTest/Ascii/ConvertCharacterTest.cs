@@ -49,3 +49,4 @@ namespace ChatApp.UnitTests.ConverterTest.Ascii
         }
     }
 }
+
